@@ -48,9 +48,11 @@ def process_coins():
    total += int(input("How many dimes?: ")) * 0.1
    total += int(input("How many nickles?: ")) * 0.05
    total += int(input("How many pennies?: ")) * 0.01
+   return total
 
 
-
+def is_transaction_successful(money_received, drink_cost):
+    # Return True when the payment is accepted or False if money is insufficient
 
 is_on = True
 while is_on:
